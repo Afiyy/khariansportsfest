@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 :root {
-  --color-primary: #4667b9;
-  --color-secondary: #5e46b9;
-  --color-accent: #46a1b9;
+  --color-primary: #409abf;
+  --color-secondary: #e35a19;
+  --color-accent: white;
 }
 
 * {
@@ -24,4 +24,21 @@ form {
 
 form > * {
   margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: var(--color-primary) 1px solid;
+  padding: 1rem;
+}
+
+input[type="submit"] {
+  padding: 1rem;
+  margin: 0 10vw;
+  background-color: var(--color-secondary);
+  color: var(--color-accent);
+  font-weight: bolder;
+  font-size: larger;
+  border: none;
+  border-radius: 10px;
 }
