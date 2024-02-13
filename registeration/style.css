@@ -26,11 +26,16 @@ nav {
   text-align: center;
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 5rem;
+  align-items: baseline;
+  padding: 1.5vh 5rem;
 }
 
 nav > * {
-  font-size: large;
+  font-size: small;
+}
+
+nav > p {
+  font-size: medium;
 }
 
 ul {
@@ -40,8 +45,8 @@ ul {
   display: flex;
 }
 
-li {
-  padding-left: 4rem;
+nav > ul > li {
+  margin-left: 4rem;
 }
 
 form {
@@ -82,7 +87,7 @@ input {
 
 input:not([type="submit"]) {
   border: var(--color-accent) 1px solid;
-  padding: 1rem;
+  padding: 0.7rem;
 }
 
 input[type="submit"] {
@@ -105,7 +110,8 @@ footer > .long {
   min-height: 30vh;
   display: flex;
   justify-content: space-around;
-  padding-top: 5%;
+  align-items: flex-start;
+  padding-top: 5vh;
 }
 
 footer > .short {
@@ -118,15 +124,13 @@ footer > .short {
 ul#column {
   display: flex;
   flex-direction: column;
-}
-
-ul#column > li:first-child {
   margin-top: 0;
-  font-size: large;
+  font-size: medium;
   font-weight: bold;
 }
 
 ul#column > li {
   font-size: small;
   margin-top: 10px;
+  color: #e6e1da;
 }
