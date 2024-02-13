@@ -16,8 +16,10 @@ body {
   background-color: var(--color-primary);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  width: 100%;
+  min-height: 100vh;
 }
 
 nav {
@@ -27,7 +29,7 @@ nav {
   text-align: center;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding: 1.5vh 5rem;
 }
 
@@ -37,6 +39,22 @@ nav > * {
 
 nav > p {
   font-size: medium;
+}
+
+.menuicon {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  nav {
+    padding: 1vh 2rem;
+  }
+  nav > ul {
+    display: none;
+  }
+  .menuicon {
+    display: block;
+  }
 }
 
 ul {
@@ -59,9 +77,6 @@ form {
   margin: 4vh 25vw;
   border-radius: 10px;
   min-width: 400px;
-}
-
-@media only screen and (max-width: 768px) {
 }
 
 h1 {
@@ -97,6 +112,7 @@ input:not([type="submit"]) {
 
 input[type="submit"] {
   padding: 1rem;
+  min-width: fit-content;
   margin: 5rem 10vw;
   background-color: var(--color-accent);
   color: var(--color-secondary);
@@ -104,19 +120,21 @@ input[type="submit"] {
   font-size: larger;
   border: none;
   border-radius: 2%;
+  align-self: center;
 }
 
 footer {
   color: var(--color-primary);
+  margin-top: auto;
 }
 
 footer > .long {
   background-color: #668175;
-  min-height: 30vh;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   padding-top: 5vh;
+  padding-bottom: 20vh;
 }
 
 footer > .short {
@@ -142,5 +160,5 @@ ul#column > li {
 
 nav,
 footer {
-  min-width: 100%;
+  width: 100%;
 }
