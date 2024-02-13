@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 nav {
@@ -55,8 +56,12 @@ form {
   margin: auto;
   max-width: 50%;
   padding: 2rem;
-  margin: 6vh 25vw;
+  margin: 4vh 25vw;
   border-radius: 10px;
+  min-width: 400px;
+}
+
+@media only screen and (max-width: 768px) {
 }
 
 h1 {
@@ -68,7 +73,7 @@ h1 {
 .con {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 6vh;
 }
 
 form > * {
@@ -133,4 +138,9 @@ ul#column > li {
   font-size: small;
   margin-top: 10px;
   color: #e6e1da;
+}
+
+nav,
+footer {
+  min-width: 100%;
 }
