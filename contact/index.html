@@ -23,35 +23,21 @@
       <ul>
         <a href="../home/">Home</a>
         <li>The Team</li>
-        <a href="../contact/">Contact Us</a>
+        <li>Contact Us</li>
       </ul>
       <div class="menuicon">
         <span class="material-symbols-outlined">menu</span>
       </div>
     </nav>
 
-    <div class="con"><h1>Register</h1></div>
+    <div class="con"><h1>Contact Us</h1></div>
     <form
-      method="post"
-      action="https://script.google.com/macros/s/AKfycbzq3ijSrPnLDrGfxil897bGdcA3U3VgGk1E2vxm3e7Rn0z3v7_7LKV95qAYS_koQgM6/exec"
+      action="https://formsubmit.co/5fd202c0103df4fadc8e224d66f6504e"
+      method="POST"
     >
-      <label for="name">Full Name</label>
-      <input type="text" name="name" id="name" />
-      <label for="age">Age</label>
-      <input type="number" name="age" id="age" />
-      <label for="email">Email Address</label>
-      <input type="email" name="email" id="email" />
-      <label for="cnic">CNIC Number</label>
-      <input
-        type="tel"
-        pattern="(\d{5}-)(\d{7}-)(\d{1})"
-        placeholder="XXXXX-XXXXXXX-X"
-        name="cnic"
-        id="cnic"
-      />
-      <label for="phone">Phone Number</label>
-      <input type="tel" name="phone" id="phone" />
-      <input type="submit" value="Continue To Payment" />
+      <input type="email" name="email" />
+      <textarea name="body" id="body" cols="30" rows="10"></textarea>
+      <input type="submit" value="Submit" />
     </form>
 
     <footer>
